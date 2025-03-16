@@ -2,3 +2,41 @@ server:
   port: 8080
   servlet:
     context-path: /bicycle-equity
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  # 指定 Druid 数据源
+
+    # Druid 连接池配置
+    druid1:
+      initial-size: 5   # 初始连接数
+      min-idle: 5       # 最小空闲连接
+      max-active: 20    # 最大连接数
+      max-wait: 60000   # 最大等待时间（毫秒）
+      url: jdbc:mysql://192.168.1.6:3306/bicycle?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      username: root
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+      # 配置 SQL 监控
+      filters: stat,wall,slf4j
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+        reset-enable: false
+        url-pattern: /druid/*
+
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  # 指定 XML 位置
+  type-aliases-package: com.bicycle.service.model  # 实体类包名
+
+logging:
+  level:
+    com.alibaba.druid: DEBUG

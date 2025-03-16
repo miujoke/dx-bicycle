@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bicycle.service.mapper.UserMapper">
+
+    <!-- 查询用户列表 -->
+    <select id="getAllUsers" resultType="com.bicycle.service.model.User">
+        SELECT * FROM tbl_user;
+    </select>
+
+    <!-- 根据ID查询用户 -->
+    <select id="getUserById" parameterType="Long" resultType="com.bicycle.service.model.User">
+        SELECT * FROM tbl_user WHERE id = #{id};
+    </select>
+
+    <!-- 插入用户 -->
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tbl_user (account, password, nickname, avatar, email, create_time, update_time)
+        VALUES (#{account}, #{password}, #{nickname}, #{avatar}, #{email}, NOW(), NOW());
+    </insert>
+
+    <!-- 更新用户 -->
+    <update id="updateUser">
+        UPDATE tbl_user
+        SET account = #{account}, password = #{password}, nickname = #{nickname},
+            avatar = #{avatar}, email = #{email}, update_time = NOW()
+        WHERE id = #{id};
+    </update>
+
+    <!-- 删除用户 -->
+    <delete id="deleteUser">
+        DELETE FROM tbl_user WHERE id = #{id};
+    </delete>
+
+</mapper>

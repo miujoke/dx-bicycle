@@ -19,6 +19,6 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         super.addInterceptors(registry);
-        registry.addInterceptor(commonInterceptor).addPathPatterns("/health");
+        registry.addInterceptor(commonInterceptor).addPathPatterns("/**");
     }
 }

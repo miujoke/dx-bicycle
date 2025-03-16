@@ -11,6 +11,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <groupId>com.dx.bicycle.service</groupId>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>usersevice</module>
     </modules>
