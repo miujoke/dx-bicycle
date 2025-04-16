@@ -3,6 +3,7 @@ package com.bicycle.equity;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,8 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
  * @author miujoke
  * @date 2025/3/15 23:26
  */
-@SpringBootApplication
-@ComponentScan({"com.bicycle.common.service.impl","com.bicycle",})
+@SpringBootApplication(scanBasePackages ="com.bicycle",exclude = {DataSourceAutoConfiguration.class})
+@ComponentScan({"com.bicycle.common.service.impl","com.bicycle.service"})
 @MapperScan("com.bicycle.service.mapper")
 public class EquityApplication extends SpringBootServletInitializer {
 

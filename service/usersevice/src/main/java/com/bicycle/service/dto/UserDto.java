@@ -1,4 +1,4 @@
-package com.bicycle.service.model;
+package com.bicycle.service.dto;
 
 /**
  * @author miujoke

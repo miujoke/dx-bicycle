@@ -1,7 +1,7 @@
 package com.bicycle.service.service;
 
 import com.bicycle.service.model.User;
-import com.bicycle.service.model.UserDto;
+import com.bicycle.service.dto.UserDto;
 
 import java.util.List;
 

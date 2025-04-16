@@ -2,7 +2,7 @@ package com.bicycle.service.service.impl;
 
 import com.bicycle.service.mapper.UserMapper;
 import com.bicycle.service.model.User;
-import com.bicycle.service.model.UserDto;
+import com.bicycle.service.dto.UserDto;
 import com.bicycle.service.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

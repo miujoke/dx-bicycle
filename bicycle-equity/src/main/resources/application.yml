@@ -40,3 +40,7 @@ mybatis:
 logging:
   level:
     com.alibaba.druid: DEBUG
+rocketmq:
+  name-server: 192.168.1.6:9876
+  producer:
+    group: my-producer-group

@@ -10,9 +10,7 @@ import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.WebRequestInterceptor;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter;
 
 /**
  * @author miujoke

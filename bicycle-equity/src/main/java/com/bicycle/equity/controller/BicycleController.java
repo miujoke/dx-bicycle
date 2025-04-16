@@ -1,8 +1,7 @@
 package com.bicycle.equity.controller;
 
 import com.bicycle.common.dto.JSONResponse;
-import com.bicycle.service.model.User;
-import com.bicycle.service.model.UserDto;
+import com.bicycle.service.dto.UserDto;
 import com.bicycle.service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +20,7 @@ import java.util.List;
 public class BicycleController {
 
     @Autowired
-    private  UserService userService;
+    private UserService userService;
 
 
     @GetMapping("/health")
