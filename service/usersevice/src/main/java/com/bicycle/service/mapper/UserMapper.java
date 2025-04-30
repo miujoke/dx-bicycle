@@ -9,7 +9,7 @@ import java.util.List;
  * @author miujoke
  * @date 2025/3/17 0:24
  */
-@Mapper
+//@Mapper
 public interface UserMapper {
     List<User> getAllUsers();
     User getUserById(Long id);

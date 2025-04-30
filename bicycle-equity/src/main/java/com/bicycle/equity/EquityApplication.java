@@ -13,7 +13,10 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2025/3/15 23:26
  */
 @SpringBootApplication(scanBasePackages ="com.bicycle",exclude = {DataSourceAutoConfiguration.class})
-@ComponentScan({"com.bicycle.common.service.impl","com.bicycle.service"})
+@ComponentScan(basePackages = {
+        "com.bicycle.service",  // service 模块下所有 Bean（包含 MapperScan 配置类）
+        "com.bicycle.equity"    // 当前模块
+})
 @MapperScan("com.bicycle.service.mapper")
 public class EquityApplication extends SpringBootServletInitializer {
 
