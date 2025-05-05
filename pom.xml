@@ -28,7 +28,7 @@
         <mybatis.version>3.0.4</mybatis.version>
         <javax.validation.version>2.0.1.Final</javax.validation.version>
         <druid.version>1.2.23</druid.version>
-        <rocketmq.version>2.2.3</rocketmq.version>
+        <rocketmq.version>2.2.2</rocketmq.version>
     </properties>
 
     <dependencyManagement>
@@ -37,12 +37,6 @@
                 <groupId>org.apache.rocketmq</groupId>
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
                 <version>${rocketmq.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.eclipse.jetty</groupId>
-                        <artifactId>jetty-server</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <!-- Import dependency management from Spring Boot -->

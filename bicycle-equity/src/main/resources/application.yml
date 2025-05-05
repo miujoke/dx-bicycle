@@ -13,7 +13,7 @@ spring:
       min-idle: 5       # 最小空闲连接
       max-active: 20    # 最大连接数
       max-wait: 60000   # 最大等待时间（毫秒）
-      url: jdbc:mysql://192.168.1.6:3306/bicycle?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://192.168.1.6:3306/bicycle?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
       username: root
       password: admin
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -40,6 +40,7 @@ mybatis:
 logging:
   level:
     com.alibaba.druid: DEBUG
+    org.apache.rocketmq: DEBUG
 rocketmq:
   name-server: 192.168.1.6:9876
   producer:

@@ -15,7 +15,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication(scanBasePackages ="com.bicycle",exclude = {DataSourceAutoConfiguration.class})
 @ComponentScan(basePackages = {
         "com.bicycle.service",  // service 模块下所有 Bean（包含 MapperScan 配置类）
-        "com.bicycle.equity"    // 当前模块
+        "com.bicycle.equity",    // 当前模块
+        "com.bicycle.common"    // c
 })
 @MapperScan("com.bicycle.service.mapper")
 public class EquityApplication extends SpringBootServletInitializer {

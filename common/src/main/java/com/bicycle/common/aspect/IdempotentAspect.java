@@ -1,7 +1,7 @@
 package com.bicycle.common.aspect;
 
 import com.bicycle.common.annotation.IdempotentAnnotation;
-import io.micrometer.common.util.StringUtils;
+import io.micrometer.core.instrument.util.StringUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+
 
 /**
  * @author miujoke
