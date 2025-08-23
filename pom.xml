@@ -9,7 +9,7 @@
         <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
     </parent>-->
 
-    <groupId>com.dx.bicycle</groupId>
+    <groupId>com.bicyclebicycle</groupId>
     <artifactId>bicycle</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
