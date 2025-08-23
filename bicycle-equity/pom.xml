@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.bicyclebicycle</groupId>
+        <groupId>com.bicycle</groupId>
         <artifactId>bicycle</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -12,13 +12,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.bicyclebicycle</groupId>
+            <groupId>com.bicycle</groupId>
             <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.bicyclebicycle</groupId>
+            <groupId>com.bicycle</groupId>
+            <artifactId>mqservice</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bicycle</groupId>
             <artifactId>userservice</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -68,6 +73,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <scope>annotationProcessor</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
     </dependencies>
 </project>

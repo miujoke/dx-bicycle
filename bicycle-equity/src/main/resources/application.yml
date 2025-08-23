@@ -41,7 +41,11 @@ logging:
   level:
     com.alibaba.druid: DEBUG
     org.apache.rocketmq: DEBUG
+    root: info
+    io.netty: warn
+  file:
+    name: logs/bicycle.log
 rocketmq:
   name-server: 192.168.1.6:9876
   producer:
-    group: my-producer-group
+    group: equity-producer-group
