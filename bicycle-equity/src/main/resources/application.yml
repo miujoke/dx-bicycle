@@ -45,6 +45,8 @@ logging:
     io.netty: warn
   file:
     name: logs/bicycle.log
+  charset:
+    console: UTF-8
 rocketmq:
   name-server: 192.168.1.6:9876
   producer:
