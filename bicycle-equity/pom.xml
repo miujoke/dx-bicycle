@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.bicyclebicycle</groupId>
-            <artifactId>usersevice</artifactId>
+            <artifactId>userservice</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

@@ -7,8 +7,8 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>usersevice</artifactId>
-    <name>Archetype - usersevice</name>
+    <artifactId>userservice</artifactId>
+    <name>userservice</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
